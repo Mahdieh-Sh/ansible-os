@@ -3,10 +3,10 @@ users:
   password: "123"
   owner: mahi
   group: mahi
-  authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDkO+yS1+yu4ODNcawUpMe/svrOY/ywJU3qjX+qz2P9zA1geKQIosHKVThWEDsNyU3IZYGBJBI/weGm6FHkP+MTZpYzNhpQFCDYh7sXOf5StneF+gANAKhQ8LgvSD64iTlWXZ/VRCj348793RaTZcXGUQ0SjVq+WiLIvkOTjUkDEGE6t++b3OGpnkR3WDO+UcYWGx64sjFPSgTo0asF+qqWUpq/XAvXtlu55ecDkO3L4TisTtGr29FQAqMbkLCmfqZFnUAqZipZZTQkiduZEIFt9rgwdniPHaqjXpGhC7dxhZX2b/4NRzhBr3CTUt7yZsyPOQZJoL2G1WLe2xagVH3TFVqmXTwGKg+sNDh9QKIoUaLLDIOkhJAHTye02Za0mco3t+5VIjVwYetyU4s9dChJA2I4ttkBjrK7PtH2j1hx569ErcZ43PynWBAjkDH/6zcUVKTW/j/+x5zcq10e2718gesRjs/5wFTbhfswiH0ffjZoNa9esQE/bJ40z8SdBSE= mahdieh@mahdieh
-- username: hossein
+  authorized_keys:
+- username: hossein 
   password: "456"
   owner: hossein
   group: hossein
-  authorized_keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZCR4KKnsEf/5J/Muhy4j9wxhqgwDolC12IumStc8LvPYyCy2zTt7HkNQAC2HeUi7z0J3Vt9xuWPoNfRa3U7Xtc5NczyFxijTnnHh772vo4masWoKej5cLhikFV7Az2AwONkj/2itRT8nyzDZfrwTF5ManbXviBcr1WbrFFxEN68Ev0g2OTKfkoi9TNzP3m8PiXtu9chjxB/vCmS83zSGKegd25U92+JkdWXgR0ccDrs5N3hoYtQGJeyvzssLtdPD2bKHReYoQRZgQoLlkV951TPGhu9I+vfSMpPOzJYqTbMauV/X73mqmpJZyonng44RQma17+Jj4zN2ra9QpFeKKz6Ge5tQfJXHHOjgYCHrg5I6DKe+LQ1mBu/qGvnURH9BpK+DLvF/i6mRwnmZ1swmoGRv1lFA86Eofw9LcBwZQgdybOSRT3olNvuzrH0AOX8L/mcbX8pVidTMtF5tBOs9cn+yEGlOk0ANL3Cbne166I1X4FTi/VLWymvF1xum0cxM= hmahdiany@sotoon
+  authorized_keys:
 
