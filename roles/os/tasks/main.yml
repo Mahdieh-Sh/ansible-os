@@ -1,0 +1,37 @@
+---
+#- name: Update and upgrade
+  #apt:
+    #upgrade: "yes"
+    #update_cache: "yes"
+    #cache_valid_time: 86400
+
+- name: add user
+  user:
+    name: "{{ item.username }}"
+    shell: /bin/bash
+    groups: sudo
+    append: yes
+    password: "{{ item.password | password_hash('sha512') }}"
+  loop: "{{ users }}"
+
+- name: mkdir .ssh for users
+  file:
+    path: /home/{{ item.username }}/.ssh
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    state: directory
+  loop: "{{ users }}"
+
+- name: touch authorized_keys
+  file:
+    path: /home/{{ item.username }}/.ssh/authorized_keys
+    owner: "{{ item.owner }}"
+    group: "{{ item.group }}"
+    state: touch
+  loop: "{{ users }}"
+
+- name: lineinfile for add public-key for specific users
+  lineinfile:
+    path: /home/{{ item.username }}/.ssh/authorized_keys
+    line: "{{ item. authorized_keys }}"
+  loop: "{{ users }}"
